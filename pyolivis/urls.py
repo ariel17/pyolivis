@@ -1,6 +1,13 @@
-from django.conf.urls import patterns, include, url
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# Uncomment the next two lines to enable the admin:
+"""
+Description: URL dispatcher configuration.
+"""
+__author__ = "Ariel Gerardo Ríos (ariel.gerardo.rios@gmail.com)"
+
+
+from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
@@ -14,4 +21,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
+    # Search engine application
+    url(r'^search/', include('pyolivis.apps.search.urls')),
 )
+
+# vim:ft=python ts=4 tw=80 cc=+1:
