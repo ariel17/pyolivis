@@ -121,6 +121,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     # Project applications
     'pyolivis.apps.search',
+    'pyolivis.apps.video',
 )
 
 # A sample logging configuration. The only tangible logging
