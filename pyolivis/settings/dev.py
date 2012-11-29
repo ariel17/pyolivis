@@ -46,6 +46,8 @@ DATABASES = {
     }
 }
 
-INSTALLED_APPS += ()
+INSTALLED_APPS += (
+    'django_extensions',
+)
 
 # vim:ft=python ts=4 tw=80 cc=+1:
