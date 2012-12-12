@@ -24,6 +24,12 @@ urlpatterns = patterns('',
 
     # Search engine application
     url(r'^search/', include('pyolivis.apps.search.urls')),
+
+    # Registration application
+    url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page':
+        '/'}), 
 )
+
 
 # vim:ft=python ts=4 tw=80 cc=+1:

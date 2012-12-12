@@ -50,4 +50,15 @@ INSTALLED_APPS += (
     'django_extensions',
 )
 
+# Configuration for registration application
+
+ACCOUNT_ACTIVATION_DAYS = 1
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ariel.gerardo.rios@gmail.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+
+
 # vim:ft=python ts=4 tw=80 cc=+1:

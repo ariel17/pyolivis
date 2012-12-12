@@ -31,4 +31,15 @@ if environ.has_key('DATABASE_URL'):
 
 INSTALLED_APPS += ()
 
+# Configuration for registration application
+
+ACCOUNT_ACTIVATION_DAYS = 7
+
+EMAIL_HOST = 'smtp-server.example.org'
+EMAIL_HOST_USER = 'username'
+EMAIL_HOST_PASSWORD = 'password'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+
+
 # vim:ft=python ts=4 tw=80 cc=+1:
