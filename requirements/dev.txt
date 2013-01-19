@@ -1,5 +1,6 @@
 # requirements/dev.txt
 -r common.txt
+psycopg2==2.4.5
 django-debug-toolbar==0.9.4
 django-extensions==1.0.1
 pygraphviz==1.1
