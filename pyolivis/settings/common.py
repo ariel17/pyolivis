@@ -127,7 +127,8 @@ INSTALLED_APPS = (
 
     # Project applications
     'pyolivis.apps.search',
-    'pyolivis.apps.video',
+    'pyolivis.apps.movie',
+    'pyolivis.apps.participation',
 )
 
 # A sample logging configuration. The only tangible logging
